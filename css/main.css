@@ -1,17 +1,14 @@
-body, html {
-  margin: 1em 1em 1em 1em;
+body,
+html {
+  margin: 0;
   width: 100%;
   height: 100%;
 }
 
 body {
-  font-family: 'Montserrat','work Sans';
+  font-family: "Montserrat","Work Sans";
   font-size: 12px;
   color: #2d3c49;
-}
-
-header, section {
-  box-sizing: border-box;
 }
 
 a {
@@ -27,11 +24,15 @@ p {
   width: 86%;
 }
 
-@media screen and (min-width: 900px) {
-  body {
-    margin: 1em 4em 1em 6em;
-  }
+header,
+hr,
+section,
+footer,
+p,
+a {
+  margin-left: 1em;
 }
+
 
 /*
  *
@@ -40,12 +41,11 @@ p {
  */
 
 .header {
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   min-height: 56px;
   transition: min-height 0.3s;
   display: flex;
   flex-direction: row;
-  width: 90%;
 }
 
 .header__logo {
@@ -74,7 +74,7 @@ p {
 .header__subtitle {
   font-weight: 500;
   font-size: 2.5em;
-  margin: 0em 0.2em 0.4em 0.1em;
+  margin: 0 0.2em 0.4em 0.1em;
   display: flex;
   justify-content: flex-end;
   width: 97%;
@@ -83,9 +83,8 @@ p {
 hr {
   border-color: #2d3c49;
   box-sizing: border-box;
-  margin-left: 0px;
   text-align: left;
-  width: 80%;
+  width: 90%;
 }
 
 @media screen and (max-width: 399px) {
@@ -101,14 +100,14 @@ hr {
 
   .header__subtitle {
     font-size: 1.2em;
-    margin: 0em 0.2em 0.2em 0.1em;
+    margin: 0 0.2em 0.2em 0.1em;
   }
 }
 
 @media screen and (min-width: 400px) and (max-width: 699px) {
   .header__logo_img {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
   }
 
   .header__title {
@@ -118,7 +117,7 @@ hr {
 
   .header__subtitle {
     font-size: 1.7em;
-    margin: 0em 0.2em 0.4em 0.1em;
+    margin: 0 0.2em 0.4em 0.1em;
   }
 }
 
@@ -135,7 +134,7 @@ hr {
 
   .header__subtitle {
     font-size: 2.7em;
-    margin: 0em 0.2em 0.4em 0.1em;
+    margin: 0 0.2em 0.4em 0.1em;
   }
 }
 
@@ -154,11 +153,11 @@ main {
 .main__image {
   display: inline-block;
   margin-top: 1.3em;
-  width: 90%;
+  width: 94%;
 }
 
 .main__feat_work {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 .main__feat_work_header {
@@ -176,7 +175,7 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 86%;
+  width: 90%;
   flex-grow: 1;
  }
 
@@ -186,14 +185,15 @@ main {
 
 .main__feat_work_image {
   display: flex;
-  height: 223px;
+  height: auto;
+  max-width: 100%;
 }
 
 .main__feat_work_title {
   display: inline-block;
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: 500;
-  margin: 0.3em 0em 0.15em 0em;
+  margin: 0.3em 0 0.15em;
   width: 100%;
   text-align: center;
 }
@@ -202,7 +202,7 @@ main {
   display: flex;
   font-size: 1.5em;
   font-weight: 500;
-  margin: 0.15em 0em 0.8em 0em;
+  margin: 0.15em 0 0.8em;
   width: 100%;
   justify-content: center;
 }
@@ -213,7 +213,6 @@ main {
   }
 
   .main__feat_work_header_text {
-    font-weight: 500;
     font-size: 2em;
   }
 
@@ -222,17 +221,15 @@ main {
    }
 
   .main__feat_work_image {
-    height: 160px;
+    height: 190px;
   }
 
   .main__feat_work_title {
     font-size: 2em;
-    font-weight: 500;
   }
 
   .main__feat_work_url {
     font-size: 1em;
-    font-weight: 500;
   }
 }
 
@@ -242,47 +239,41 @@ main {
   }
 
   .main__feat_work_header_text {
-    font-weight: 500;
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .main__feat_work_image {
-    height: 300px;
+    height: 210px;
   }
 
   .main__feat_work_title {
-    font-size: 3em;
-    font-weight: 500;
+    font-size: 2.5em;
   }
 
   .main__feat_work_url {
-    font-size: 2em;
-    font-weight: 500;
+    font-size: 1.5em;
   }
 }
 
 @media screen and (min-width: 700px) and (max-width: 899px) {
   .main__image{
-    margin-top: 1em;
+    margin-top: 1.2em;
   }
 
   .main__feat_work_header_text {
-    font-weight: 500;
-    font-size: 3em;
+    font-size: 3.5em;
   }
 
   .main__feat_work_image {
-    height: 300px;
+    height: 400px;
   }
 
   .main__feat_work_title {
-    font-size: 3em;
-    font-weight: 500;
+    font-size: 3.5em;
   }
 
   .main__feat_work_url {
-    font-size: 2em;
-    font-weight: 500;
+    font-size: 2.2em;
   }
 }
 
@@ -294,10 +285,10 @@ main {
 
 footer {
   display: block;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-weight: 800;
   font-size: 1.5em;
-  margin: 1.3em 0 3em 0;
+  margin: 1.3em 0 3em;
 }
 
 .footer__buttons a {
@@ -305,27 +296,24 @@ footer {
   text-decoration: none;
   cursor: pointer;
   text-align: left;
-  margin: 0.3em 0em 0 0.2em;
+  margin-top: 0.3em;
   padding: 1em 1em 1em 0;
 }
 
 @media screen and (max-width: 399px) {
   footer {
     font-size: 0.9em;
-    margin: 1.3em 0 3em 0;
   }
 }
 
 @media screen and (min-width: 400px) and (max-width: 699px) {
   footer {
     font-size: 1.3em;
-    margin: 1.3em 0 3em 0;
   }
 }
 
 @media screen and (min-width: 700px) and (max-width: 899px) {
   footer {
     font-size: 1.6em;
-    margin: 1.3em 0 3em 0;
   }
 }
