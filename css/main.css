@@ -24,16 +24,6 @@ p {
   width: 86%;
 }
 
-header,
-hr,
-section,
-footer,
-p,
-a {
-  margin-left: 1em;
-}
-
-
 /*
  *
  * HEADER
@@ -46,10 +36,12 @@ a {
   transition: min-height 0.3s;
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .header__logo {
   align-self: center;
+  margin-left: 2em;
 }
 
 .header__logo_img {
@@ -59,8 +51,9 @@ a {
 
 .header__container {
   display: flex;
-  flex-direction:column;
-  width: 80%;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 2em;
 }
   
 .header__title {
@@ -83,8 +76,8 @@ a {
 hr {
   border-color: #2d3c49;
   box-sizing: border-box;
-  text-align: left;
-  width: 90%;
+  text-align: center;
+  width: 97%;
 }
 
 @media screen and (max-width: 399px) {
@@ -145,15 +138,20 @@ hr {
  */
 
 main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .main__image {
-  display: inline-block;
+  display: flex;
   margin-top: 1.3em;
-  width: 94%;
+  width: 98%;
+  max-width: 1086px;
+  ;
 }
 
 .main__feat_work {
@@ -161,11 +159,12 @@ main {
 }
 
 .main__feat_work_header {
-  margin: 2em 0.2em 0.1em 0.1em;
-  width: 90%;
+  width: 100%;
+  text-align: center;
 }
 
 .main__feat_work_header_text {
+  margin: 1em 0.2em 0.1em 0.1em;
   font-weight: 500;
   font-size: 3em;
   color: #7d97ad;
@@ -175,18 +174,19 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   flex-grow: 1;
+  justify-content: center;
  }
 
 .main__feat_work_portfolio {
-  margin: 1em 2.3em 1em 0.2em;
+  margin-top: 1em;
+  padding: 10px;
 }
 
 .main__feat_work_image {
   display: flex;
-  height: auto;
-  max-width: 100%;
+  width: 100%;
 }
 
 .main__feat_work_title {
@@ -210,18 +210,11 @@ main {
 @media screen and (max-width: 399px) {
   .main__image{
     margin-top: 0.7em;
+    height: 150px;
   }
 
   .main__feat_work_header_text {
     font-size: 2em;
-  }
-
-  .main__feat_work_container {
-    width: 100%;
-   }
-
-  .main__feat_work_image {
-    height: 190px;
   }
 
   .main__feat_work_title {
@@ -236,14 +229,11 @@ main {
 @media screen and (min-width: 400px) and (max-width: 699px) {
   .main__image{
     margin-top: 0.7em;
+    height: 150px;
   }
 
   .main__feat_work_header_text {
     font-size: 2.5em;
-  }
-
-  .main__feat_work_image {
-    height: 210px;
   }
 
   .main__feat_work_title {
@@ -258,14 +248,11 @@ main {
 @media screen and (min-width: 700px) and (max-width: 899px) {
   .main__image{
     margin-top: 1.2em;
-  }
+    height: 280px;
+   }
 
   .main__feat_work_header_text {
     font-size: 3.5em;
-  }
-
-  .main__feat_work_image {
-    height: 400px;
   }
 
   .main__feat_work_title {
@@ -273,7 +260,7 @@ main {
   }
 
   .main__feat_work_url {
-    font-size: 2.2em;
+    font-size: 2.1em;
   }
 }
 
@@ -288,7 +275,6 @@ footer {
   font-family: "Work Sans";
   font-weight: 800;
   font-size: 1.5em;
-  margin: 1.3em 0 3em;
 }
 
 .footer__buttons a {
@@ -297,7 +283,11 @@ footer {
   cursor: pointer;
   text-align: left;
   margin-top: 0.3em;
-  padding: 1em 1em 1em 0;
+  padding: 2em 2em 1em 2em;
+}
+
+.footer__text {
+  margin: 0.5em 0 2em 2em;
 }
 
 @media screen and (max-width: 399px) {
